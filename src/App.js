@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1
   },
   menuButten: {
-    marginRight: theme.spacing(1)
+    marginRight: theme.spacing(2),
   },
   title: {
     flexGrow: 1
@@ -21,12 +21,12 @@ function App() {
     <AppBar position="fixed">
       <Container fixed>
         <Toolbar>
-          <IconButton edge="start" color="inherit" area-label="menu" className={classes.menuButten} />
-          <MenuIcon />
+          <IconButton edge="start" color="inherit" area-label="menu" className={classes.menuButten}>
+            <MenuIcon />
+          </IconButton>          
           <Typography className={classes.title} variant="h6">Web site witch Materiel-UI</Typography>
           <Box mr={3}>
-            <Button color="inherit" variant="outlined">Log In</Button>
-            
+            <Button color="inherit" variant="outlined">Log In</Button>            
           </Box>
           <Button color="secondary" variant="contained">Sign Up</Button>
         </Toolbar>
